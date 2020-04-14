@@ -1,0 +1,25 @@
+{
+  "name": "node_crud",
+  "version": "1.0.0",
+  "description": "create read update delete in NodeJS",
+  "main": "mongo_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angels21/mongodb-basics.git"
+  },
+  "author": "Solomon Abe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angels21/mongodb-basics/issues"
+  },
+  "homepage": "https://github.com/angels21/mongodb-basics#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "mongodb": "^3.5.6"
+  }
+}
