@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 //imported functions
-const insertMovies = require('./interns')
+const updateMovies = require('./updateInterns')
 
 //connection to URL
 const url = 'mongodb://localhost:27017';
@@ -18,7 +18,7 @@ const client = new MongoClient (url, {useUnifiedTopology: true,
 
     const db =client.db(dbName);
 
-    insertMovies(db, function() {
+    updateMovies(db, function() {
         client.close();
     });
     });    

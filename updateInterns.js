@@ -1,4 +1,3 @@
-updateInterns.js
 const assert = require('assert');
 const updateMovies = function(db, callback) {
 	// Get the documents collection
@@ -6,11 +5,11 @@ const updateMovies = function(db, callback) {
     //field to update in document
     const myquery = {movie:"The Banker"};
     //new fields
-    const newvalues = {$set:{movie:"Money Heist", year:"2019", rating:10,}};
+    const newvalues = {$set:{movie:"Money Heist", year:"2019", rating:10}};
 	//update document function 
 	collection.updateOne(myquery, newvalues, function(err, result) {
 	  assert.equal(err, null);
-	  console.log("updated one movie document");
+	  console.log("sucessfully updated one movie document");
 	  console.log(result);
 	  callback(result);
 	});
