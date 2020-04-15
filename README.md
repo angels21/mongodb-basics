@@ -1,4 +1,4 @@
-# mongodb-basics
+# crud-basics
 
 1. screenshot of documents inserted with create
 ![](images/1create.png)
