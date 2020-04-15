@@ -1,4 +1,5 @@
 const assert = require('assert');
+
 const findMovies = function(db, callback) {
 	// Get the documents collection
 	const collection = db.collection('myMovies');

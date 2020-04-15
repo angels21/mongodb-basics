@@ -1,4 +1,5 @@
 const assert = require('assert');
+
 const updateMovies = function(db, callback) {
 	// Get the documents collection
 	const collection = db.collection('myMovies');
@@ -11,10 +12,15 @@ const updateMovies = function(db, callback) {
       assert.equal(err, null);
 
       assert.equal(1, result.result.n);
-    
-	  console.log("Sucessfully updated one movie document ", result);
+
 	  callback(result);
 	});
-	
+	//Display the result to console
+	collection.find({}).toArray(function(err, result) {
+		assert.equal(err, null);
+		console.log("The collection was successfully updated as follows", result);
+		
+	});
 };
+
 module.exports = updateMovies;
