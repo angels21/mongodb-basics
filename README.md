@@ -6,7 +6,7 @@
 2. screenshot of first document in collection
 ![](images/2readfirst.png)
 
-3. screenshot of movies with a rating of 8
+3. screenshot of movies with a rating of 7
 ![](images/3readratings7.png)
 
 4. screenshot of showing movie titles only
